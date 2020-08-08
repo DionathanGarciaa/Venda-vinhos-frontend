@@ -23,6 +23,13 @@ export const Container = styled.div`
     font-size: 20px;
     font-family: "PT Sans Narrow", sans-serif;
   }
+  @media (max-width: 800px) {
+    margin-top: 200px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 100px;
+  }
 `;
 
 export const Content = styled.div`
@@ -38,6 +45,9 @@ export const Content = styled.div`
 
   img {
     max-height: 100px;
+  }
+  @media (max-width: 800px) {
+    max-width: 70vw;
   }
 `;
 

@@ -42,6 +42,19 @@ export const Container = styled.div`
       z-index: 3;
       animation: ${rotate} 2s linear infinite;
     }
+
+    @media (max-width: 600px) {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 100%;
+    padding-bottom: 20px;
+    width: 100%;
   }
 `;
 
@@ -49,8 +62,30 @@ export const Image = styled.div`
   img {
     max-height: 300px;
   }
+
   position: absolute;
   z-index: 1;
   top: 45%;
-  left: 70vw;
+  left: 50vw;
+  @media (max-width: 1920px) {
+    left: 70%;
+    img {
+      max-height: 300px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    top: 0%;
+    left: 30%;
+    img {
+      max-height: 200px;
+    }
+  }
+  @media (max-width: 430px) {
+    top: 0%;
+    left: 35%;
+    img {
+      max-height: 80px;
+    }
+  }
 `;

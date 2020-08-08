@@ -12,6 +12,13 @@ export const Container = styled.div`
   h1 {
     color: #fff;
   }
+  @media (max-width: 800px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 100px;
+  }
 `;
 
 export const Content = styled.div`
@@ -24,6 +31,10 @@ export const Content = styled.div`
   border-radius: 5px;
   padding: 40px;
   box-shadow: 5px 5px 5px ${darken(0.2, "#722f37")};
+
+  @media (max-width: 800px) {
+    max-width: 70vw;
+  }
 `;
 
 export const Card = styled(Link)`
@@ -35,6 +46,9 @@ export const Card = styled(Link)`
   box-shadow: 2px 2px 5px ${darken(0.1, "#000")};
   text-decoration: none;
   color: black;
+  @media (max-width: 800px) {
+    max-width: 80vw;
+  }
 
   width: 100%;
   height: 20%;
