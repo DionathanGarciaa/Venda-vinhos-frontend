@@ -66,7 +66,7 @@ export const Image = styled.div`
   position: absolute;
   z-index: 1;
   top: 45%;
-  left: 50vw;
+  left: 70vw;
   @media (max-width: 1920px) {
     left: 70%;
     img {
